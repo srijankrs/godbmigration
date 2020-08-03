@@ -4,14 +4,14 @@
 
 Run
 ```bash
-go get -t github.com/srijankrs/go_db_migration
+go get -t github.com/srijankrs/godbmigration
 ```
 Import
 ```golang
-import "github.com/srijankrs/go_db_migration"
+import "github.com/srijankrs/godbmigration"
 ```
 Code ( for postgres )
 ```golang
-go_db_migration.Migrate("postgres", "localhost", "5432", "postgres_user", "postgres_password", "db_name", "db_migrations_sql_files_path") 
+godbmigration.Migrate("postgres", "localhost", "5432", "postgres_user", "postgres_password", "db_name", "db_migrations_sql_files_path") 
 ```
 Load test will be updated soon.
