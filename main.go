@@ -101,11 +101,11 @@ func Migrate(dbDriver string, host string, port string, dbUser string, dbPasswor
 
 		if val, ok := data[version]; ok {
 			if strings.Compare(val, hash) != 0 {
-				log.Printf("Migration error for version id %s, db chechsum: %s, file checksum: %s", version, val, hash)
+				log.Printf("Migration error for version id %s, db hash: %s, file hash: %s", version, val, hash)
 				panic("Migration error")
 			}
 
-			log.Printf("Migration checked for version id %s with chechsum: %s", version, hash)
+			log.Printf("Migration checked for version id %s with hash: %s", version, hash)
 			continue
 		}
 
@@ -135,7 +135,7 @@ func Migrate(dbDriver string, host string, port string, dbUser string, dbPasswor
 			panic("Migration Failed")
 		}
 
-		log.Printf("Successfully migrated version id %s with chechsum: %s in time %s", version, hash, executionTime)
+		log.Printf("Successfully migrated version id %s with hash: %s in time %s", version, hash, executionTime)
 	}
 
 	log.Printf("Migration Completed")
