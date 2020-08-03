@@ -1,4 +1,4 @@
-package main
+package go_db_migration
 
 import (
 	"crypto/sha256"
@@ -36,7 +36,6 @@ const PostgresSchemaTableQuery =
 	"hash varchar(255) NOT NULL," +
 	"executed_on timestamp default current_timestamp," +
 	"execution_time varchar(255) NOT NULL);"
-
 
 func Migrate(dbDriver string, host string, port string, dbUser string, dbPassword string, dbName string, migrationPath string) {
 
