@@ -1,0 +1,23 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+*.swp
+*.swo
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+#nodemodules
+reactApp/node_modules
+
+resume_builder_backend/target/
