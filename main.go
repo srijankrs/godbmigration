@@ -1,4 +1,4 @@
-package go_db_migration
+package godbmigration
 
 import (
 	"crypto/sha256"
